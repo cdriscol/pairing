@@ -5,7 +5,8 @@
   "repository": "https://github.com/CommercialTribe/pairing",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-node . --autotest"
+    "test": "jasmine-node . --autotest",
+    "start": "node index.js"
   },
   "license": "ISC",
   "devDependencies": {
