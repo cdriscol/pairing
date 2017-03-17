@@ -1,11 +1,11 @@
-describe('user-activities', function() {
-  beforeEach(function() {
-    this.userActivitiesCtrl = require('./user-activities');
-  });
-  
-  it('has getActivityById defined', function() {
-    expect(this.userActivitiesCtrl.getActivityById).toBeDefined();
-  });
-  
-  
+describe('user-activities', () => {
+	beforeEach(() => {
+		this.userActivitiesCtrl = require('./user-activities');
+	});
+
+	it('has getActivityById defined', () => {
+		expect(this.userActivitiesCtrl.getActivityById).toBeDefined();
+	});
+
+
 });
