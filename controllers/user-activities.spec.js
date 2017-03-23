@@ -4,6 +4,6 @@ describe('user-activities', () => {
 	});
 
 	it('has getActivityById defined', () => {
-		expect(this.userActivitiesCtrl.getActivityById).toBeDefined();
+		expect(this.userActivitiesCtrl.getActivityByIdAsync).toBeDefined();
 	});
 });
