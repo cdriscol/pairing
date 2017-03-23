@@ -9,15 +9,10 @@ const allUsers = [{
 	id: 3
 }];
 
-const getAllQ = () => allUsers;
-
-const getAllByIdsQ = (ids) => {
-	return allUsers.filter(
-		(user) => ids.indexOf(user.id) > -1
-	);
-};
+const getAllAsync = () => Promise.resolve(allUsers);
+const getAllByIdsAsync = (ids) => Promise.resolve(allUsers.filter(user => ids.indexOf(user.id) > -1));
 
 module.exports = {
-	getAllQ,
-	getAllByIdsQ
+	getAllAsync,
+	getAllByIdsAsync
 };

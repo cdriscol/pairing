@@ -12,15 +12,10 @@ const allActivities = [{
 	id: 3
 }];
 
-const getAllQ = () => allActivities;
-
-const getAllByIdsQ = (ids) => {
-	return allActivities.filter(
-		(activity) => ids.indexOf(activity.id) > -1
-	);
-};
+const getAllAsync = () => Promise.resolve(allActivities);
+const getAllByIdsAsync = (ids) => Promise.resolve(allActivities.filter(activity => ids.indexOf(activity.id) > -1));
 
 module.exports = {
-	getAllQ,
-	getAllByIdsQ
+	getAllAsync,
+	getAllByIdsAsync
 };
